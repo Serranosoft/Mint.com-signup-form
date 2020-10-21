@@ -1,0 +1,123 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(236, 236, 236);
+}
+
+ /* GRID CONFIGURATION */
+
+.grid {
+    display: grid;
+    grid-template-rows: 15% 80% 15%;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    color: #1e272e;
+}
+
+/* UTILITIES */
+
+.btn {
+    background-color: rgb(0, 91, 196);
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+}
+.link {
+    font-size: 12px;
+    text-decoration: none;
+}
+.block {
+    display: block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* MAIN CSS */
+
+header {
+    grid-row-start: 1;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    
+    font-size: 13px;
+}
+
+.btn-sign-in {
+    margin: 15px;
+    padding: 10px 30px 10px 30px;
+
+}
+
+.container {
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    font-size: 14px;
+}
+
+form {
+    width: 380px;
+    border: 1px solid #d2dae2;
+    padding: 12px;
+    margin: auto;
+    background-color: white;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.input-container {
+    margin: 30px 10px 15px 10px;
+}
+
+.input-container label {
+    display: inline-block;
+}
+
+.input-container label, .input-container small {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.dataInput {
+    padding: 8px;
+    width: 320px;
+    border: 1px solid #d2dae2;
+}
+
+small {
+    font-size: 10px; 
+}
+
+.btn-register {
+    width: 340px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+footer {
+    grid-row-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px 0 10px;
+}
+
