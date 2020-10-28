@@ -4,15 +4,6 @@ body {
     background-color: rgb(236, 236, 236);
 }
 
- /* GRID CONFIGURATION */
-
-.grid {
-    display: grid;
-    grid-template-rows: 1fr 4fr 0.5fr;
-    font-family: 'Poppins', sans-serif;
-    /*height: 100vh;*/
-    color: #1e272e;
-}
 
 /* UTILITIES */
 
@@ -28,7 +19,7 @@ body {
 }
 .block {
     display: block;
-}
+} 
 
 .center {
     display: block;
@@ -42,12 +33,16 @@ body {
 
 /* MAIN CSS */
 
+.wrapper {
+    font-family: 'Poppins', sans-serif;
+    color: #1e272e;
+}
+
 header {
-   /* grid-row-start: 1;*/
     display: flex;
     justify-content: right;
-    align-items: flex-start;
     font-size: 13px;
+    margin-bottom: 20px;
 }
 
 .btn-sign-in {
@@ -56,11 +51,11 @@ header {
 
 }
 
-.container {
-    /*grid-row-start: 2;*/
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: rgb(236, 236, 236);
     font-size: 14px;
 }
@@ -128,10 +123,6 @@ small {
 
 footer {
     margin-top: 20px;
-    /*grid-row-start: 3;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 12px;
     text-align: center;
 }
@@ -139,4 +130,3 @@ footer {
 footer a {
     margin: 0 10px 0 10px;
 }
-
